@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/test01.css}">
+    <script th:src="@{/js/jquery.js}"></script>
+</head>
+
+<body>
+template01
+<img src="../static/images/img01.jpg" th:src="@{/images/img01.jpg}" height="21" width="38">
+<h1>你好SpringBoot</h1>
+
+<script>
+    $(function () {
+        alert("弹");
+    })
+</script>
+</body>
+</html>

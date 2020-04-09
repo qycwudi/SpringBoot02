@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>状态码：[[${status}]]</h1>
+<h2>时间  ：[[${timestamp}]]</h2>
+<h2>北京时间  ：[[${#dates.format(timestamp,"yyyy-MM-dd hh.mm.ss")}]]</h2>
+</body>
+</html>
