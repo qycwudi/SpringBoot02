@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springbootdemo02.mvc.mapper.StudentMapper">
+    <select id="selectAll" resultType="com.springbootdemo02.bean.Student">
+        select * from classtable
+    </select>
+
+    <select id="selectID" resultType="com.springbootdemo02.bean.Student">
+        select * from classtable where classid = #{num }
+    </select>
+
+    <select id="select" resultType="com.springbootdemo02.bean1.People">
+        select *  from  people
+    </select>
+</mapper>

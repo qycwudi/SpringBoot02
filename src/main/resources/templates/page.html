@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>page</title>
+</head>
+<body>
+<p th:text="123">456</p>
+<!--/*@thymesVar id="plist" type="com.springbootdemo02.bean.People"*/-->
+
+<p th:each="peo:${session.plist}" th:text="${peo}"></p>
+</body>
+</html>
